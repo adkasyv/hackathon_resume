@@ -164,6 +164,7 @@ a {
 }
 .about .about__skills {
   margin-bottom: 5em;
+  color: #fff;
 }
 .about .about__skills .skills__item {
   display: grid;
