@@ -48,16 +48,9 @@ textarea,
 select {
   font: inherit;
 }
-h1,
-h2,
-h3,
-h4,
-color color-main {
-  font-size: 2.5em;
-}
 p {
-  color: #fff;
-  font-size: 0.875em;
+  color: color-main;
+  font-size: font-size--small;
 }
 a {
   text-decoration: none;
@@ -164,7 +157,6 @@ a {
 }
 .about .about__skills {
   margin-bottom: 5em;
-  color: #fff;
 }
 .about .about__skills .skills__item {
   display: grid;
