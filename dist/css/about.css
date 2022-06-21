@@ -121,6 +121,16 @@ a {
   font-size: 45px;
   color: #fff;
 }
+@media only screen and (max-width: 768px) { 
+  .about__title {
+    font-size: 30px;   
+  }
+}
+@media only screen and (max-width: 480px) {
+  .about__title {
+    font-size: 20px;   
+  }
+}
 .about .about__img {
   height: 70vh;
 }
