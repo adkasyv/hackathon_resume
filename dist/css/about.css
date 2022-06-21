@@ -1,5 +1,6 @@
 body {
   background-color: #000;
+  color: #fff;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
@@ -184,6 +185,7 @@ a {
 }
 .about .about__skills .about__skills-title {
   font-size: 3em;
+  color: #fff;
 }
 .about .about__hobby .about__hobby-title {
   font-size: 3em;
