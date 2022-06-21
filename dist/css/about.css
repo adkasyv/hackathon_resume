@@ -187,6 +187,7 @@ a {
 }
 .about .about__hobby .about__hobby-title {
   font-size: 3em;
+  color: #fff;
 }
 .about .about__hobby .hobby__item {
   display: grid;
