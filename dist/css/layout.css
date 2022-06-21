@@ -1,0 +1,96 @@
+/* 
+! ====================
+! Resetting styles
+! ====================
+*/
+body {
+  background-color: #000;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* Remove standard styling for all ul and ol that have a class attribute    */
+/* Удалить стандартный стиль для всех ul и ol, у которых есть атрибут class */
+ul[class],
+ol[class],
+li {
+  list-style: none;
+}
+ul[class],
+ol[class] {
+  padding: 0;
+}
+/* Elements a, which do not have a class, are reset to default styles    */
+/* Элементы a, у которых нет класса, сбрасываются до стилей по умолчанию */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+/* Making it easier to work with images */
+/* Упрощение работы с изображениями     */
+img {
+  max-width: 100%;
+  display: block;
+}
+/* Inheriting fonts for inputs and buttons  */
+/* Наследование шрифтов для входов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* 
+! ====================
+! Text
+! ====================
+*/
+h1,
+h2,
+h3,
+h4,
+color color-main {
+  font-size: 2.5em;
+}
+p {
+  color: #fff;
+  font-size: 0.875em;
+}
+a {
+  text-decoration: none;
+}
+/* 
+! ====================
+!  Structure
+! ====================
+*/
+.content {
+  margin: 0 3em;
+}
+.container {
+  width: 100%;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  overflow: hidden;
+}

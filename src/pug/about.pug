@@ -1,0 +1,89 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="../css/about.css")
+    title About
+  body
+    // шапка
+    header.header
+      .container 
+        a(href="index.html") 
+          img(src="../../accepts/img/footer-icon.png", alt="")
+
+    // навигация
+    .nav 
+      a(href="index.html") Main
+      a(href="about.html") About
+      a(href="work.html") Work
+      a(href="contact.html") Contact
+
+    // секция о себе    
+    .about
+      .container 
+        .about__title
+          h3 I design & build digital products
+        .about__img
+          img(src="../../accepts/img/bgc-2.png", alt="about-img")
+        .about__desc 
+          h3.about__desc-title About
+          p Hi, I’m Adil. I'm a multi-talented human with over 10+ years of experiences in wide range of design disciplines.
+          p You can also call me a product designer, experience designer, interaction, UI, UX or by any other market defined function-title. I'm also a multi-disciplinary maker with over 10 years of experiences in wide range of design disciplines, manager, advisor, entrepreneur, front-end developer, music enthusiast, traveler, photographer and more.
+          p I don’t like to define myself by the work I’ve done. I define myself by the work I want to do. Skills can be taught, personality is inherent. I prefer to keep learning, continue challenging myself, and do interesting things that matter.
+          p Fueled by high energy levels and boundless enthusiasm, I’m easily inspired and more then willing to follow my fascinations wherever they take me. I’m passionate, expressive, multi-talented spirit with a natural ability to entertain and inspire. I’m never satisfied to just come up with ideas. Instead I have an almost impulsive need to act on them.
+          p My abundant energy fuels me in the pursuit of many interests, hobbies, areas of study and artistic endeavors. I’m a fast learner, able to pick up new skills and juggle different projects and roles with relative ease.
+          p I like to develop expertise in a number of areas over the course of my life and career. I currently work remotely with a selected freelance client base and are open for new opportunities.
+          p You can read more about my biography, experience, skills, education and much more in the PDF attached bellow:
+          
+          .about__desc-link
+            a(href="#" ) ссылка на резюме
+      
+        .about__skills 
+          h3.about__skills-title Skills
+          //- ! добавить анимацию к скилам в процентах
+          .skills__item
+            p JavaScript
+            .item__scale 65%
+          .skills__item
+            p Typescript
+            .item__scale 55%
+          .skills__item
+            p Node.js
+            .item__scale 45%
+          .skills__item
+            p Docker
+            .item__scale 63%
+          .skills__item
+            p SASS
+            .item__scale 75%
+          .skills__item
+            p Yarn
+            .item__scale 55%
+          .skills__item
+            p ESLint
+            .item__scale 45%
+          .skills__item
+            p Webpack
+            .item__scale 67%
+          .skills__item
+            p Babel
+            .item__scale 72%
+            
+        .about__hobby
+          h3.about__hobby-title Hobby
+          .hobby__item
+            p Swimming
+          .hobby__item
+            p Run
+          .hobby__item
+            p Snowboard
+          .hobby__item
+            p Coding
+
+    // подвал
+    footer.footer
+      .container 
+        a(href="index.html") 
+          img(src="../../accepts/img/footer-icon.png", alt="")

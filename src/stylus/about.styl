@@ -1,0 +1,116 @@
+@import 'layout.styl'
+
+/* 
+! ====================
+! header
+! ====================
+*/
+.header
+  display none
+  @media screen-md
+    display block
+  a
+    display grid
+    justify-items start
+    margin 3em
+    img
+      width 50px
+      height 50px
+
+
+/* 
+! ====================
+! nav
+! ====================
+*/
+.nav
+  display grid
+  grid-template-columns 10% 10% 10% 10%
+  grid-template-columns repeat(auto-fit, minmax(150px, 1fr))
+  justify-content end
+  justify-items end
+  
+  margin 0 1em
+  font-size 40px
+  @media screen-md
+    display none
+
+
+/* 
+! ====================
+! about
+! ====================
+*/
+.about-wrapper  
+  a
+    text-decoration none
+
+.about
+  .about__title
+    display grid
+    align-items center
+    height 100vh
+    font-size 45px
+    color white
+  .about__img 
+    height 70vh
+    img 
+      width 600px
+  .about__desc
+    display grid
+    gap 1em
+    margin 0 7em 3em
+    font-size 24px
+    @media screen-md
+      margin 0 3em
+      grid-template-columns repeat(auto-fit, minmax(50%, 1fr))
+    @media screen-sm
+      margin 0 1em
+    .about__desc-title
+      font-size 3em
+  .about__skills
+    @extend .about__desc
+    margin-bottom 5em
+    .skills__item
+      display grid
+      grid-template-columns repeat(auto-fit, minmax(50%, 1fr))
+      place-items center
+      background-color red
+      text-align center
+      place-items center
+      .item__scale
+        width 70% 
+        background-color yellow
+        margin 10px
+        @media screen-md 
+          width 50% 
+
+    .about__skills-title
+      font-size 3em
+  .about__hobby
+    @extend .about__desc
+    .about__hobby-title
+      font-size 3em
+    .hobby__item
+      display grid
+      grid-template-columns repeat(auto-fit, minmax(300px, 1fr))
+      place-items center
+      background-color red
+      margin 10px
+      @media screen-md 
+        grid-template-columns repeat(auto-fit, minmax(50%, 1fr))
+
+
+/* 
+! ====================
+! footer
+! ====================
+*/
+.footer
+  a
+    display grid
+    justify-items end
+    margin 3em
+    img
+      width 50px
+      height 50px

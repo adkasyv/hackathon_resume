@@ -1,0 +1,89 @@
+// Layout, Variables, Fonts
+// @import 'fonts/fonts.styl'
+@import 'layout.styl'
+@import 'about.styl'
+@import 'work.styl'
+
+@keyframes about 
+  from 
+    margin-left 100%
+    width 300%
+  to 
+    margin-left 0%
+    width 100%
+@keyframes work 
+  from 
+    margin-left 70%
+    width 250%
+  to 
+    margin-left 0%
+    width 100%
+@keyframes contact 
+  from 
+    margin-left 40%
+    width 200%
+  to 
+    margin-left 0%
+    width 100%
+
+
+// !====================
+// ! about
+// !====================
+.about__title-page
+  animation-name about
+  animation-duration 2.5s
+  font-size 150px
+  @media screen-sm
+    font-size 100px
+    
+  &::before
+    content: "Hello"
+  &:hover::before 
+    content: "About"
+
+
+// !====================
+// ! work
+// !====================
+.work-wrapper
+  a
+    text-decoration none
+
+.work__title-page
+  animation-name work
+  animation-duration 2.5s
+  width 300px
+  font-size 150px
+  color white
+  @media screen-sm
+    font-size 100px
+  &::before
+    content: "I am"
+  &:hover::before 
+    content: "Work"
+
+
+
+// !====================
+// ! contact
+// !====================
+.contact-wrapper
+  a
+    text-decoration none
+
+.contact__title-page
+  animation-name contact
+  animation-duration 2.5s
+
+  width 300px
+  font-size 150px
+  color white
+  @media screen-sm
+    font-size 100px
+
+  &::before
+    content: "Adil"
+  &:hover::before 
+    content: "Contact"
+

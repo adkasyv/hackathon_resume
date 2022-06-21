@@ -1,0 +1,128 @@
+/* 
+! ====================
+! Resetting styles
+! ====================
+*/
+
+body 
+  background-color #000000
+  min-height: 100vh
+  text-rendering optimizeSpeed
+  line-height 1.5
+    
+*,
+*:before,
+*:after 
+  box-sizing border-box
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd 
+  margin 0
+
+/* Remove standard styling for all ul and ol that have a class attribute    */
+/* Удалить стандартный стиль для всех ul и ol, у которых есть атрибут class */
+ul[class],
+ol[class],
+li
+  list-style none
+
+ul[class],
+ol[class] 
+  padding 0
+
+/* Elements a, which do not have a class, are reset to default styles    */
+/* Элементы a, у которых нет класса, сбрасываются до стилей по умолчанию */
+a:not([class])
+  text-decoration-skip-ink auto
+
+/* Making it easier to work with images */
+/* Упрощение работы с изображениями     */
+img 
+  max-width 100%
+  display block
+
+/* Inheriting fonts for inputs and buttons  */
+/* Наследование шрифтов для входов и кнопок */
+input,
+button,
+textarea,
+select 
+    font inherit
+
+
+
+// ! ====================
+// ! Variables
+// ! ====================
+
+color-main         = #ffffff
+color-lower        = #000000
+color-danger       = #d9534f
+ 
+text-color         = gray-darkest
+text-color--muted  = gray
+ 
+font-size          = 1em
+font-size--h1      = 2.5em
+
+font-size--small   = 0.875em
+ 
+line-height        = 1.375em
+ 
+font-family        = 'Roboto', Arial, sans-serif
+ 
+screen-xs          = "only screen and (max-width: 320px)"
+screen-sm          = "only screen and (max-width: 480px)"
+screen-md          = "only screen and (max-width: 768px)"
+screen-lg          = "only screen and (max-width: 992px)"
+screen-xl          = "only screen and (min-width: 1200px)"
+
+
+
+/* 
+! ====================
+! Text
+! ====================
+*/
+h1,
+h2,
+h3,
+h4,
+  color color-main
+h1
+  font-size font-size--h1
+p
+  color color-main
+  font-size font-size--small
+a   
+  text-decoration none
+
+
+
+/* 
+! ====================
+!  Structure
+! ====================
+*/
+.content
+  margin 0 3em
+// .section 
+//     margin 10em 0
+.container 
+  width 100%
+  max-width 1170px
+  padding 0 15px
+  margin 0 auto
+  overflow hidden
